@@ -1,0 +1,110 @@
+/*reset css*/
+
+*,
+*::before,
+*::after{
+  /*所有的标签，和伪元素都选中*/
+  margin:0;
+  padding:0;
+
+  /*盒子模型,移动端布局是非固定像素*/
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  /*清除高亮显示*/
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color:transparent;
+
+}
+
+body{
+  font-size: 14px;
+  /*sans-serif手机专有的字体*/
+  font-family:'microsoft yahei',sans-serif;
+}
+
+a{
+  text-decoration: none;
+  /*display: block;*/
+  color: #333;
+}
+
+input,textarea{
+  border:none;
+  outline: none;/*选中时候*/
+
+  /*不允许拖动放大缩小*/
+  resize: none;
+
+  /*清除原有的3d,高光样式*/
+  -webkit-appearance: none;
+}
+
+ul,ol,li,dl,dt,dd{
+  list-style:none;
+}
+
+image{
+  border:0;
+  /*清除下间隙*/
+  display: block;
+}
+
+
+/*common css*/
+
+.clearfix::before,
+.clearfix::after{
+  content: '';
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+
+.f_l{
+  float: left;
+}
+
+.f_r{
+  float: right;
+}
+
+
+.m-l10{
+  margin-left: 10px;
+}
+
+.m-r10{
+  margin-right: 10px;
+}
+
+.m-t10{
+  margin-top: 10px;
+}
+
+.m-b10{
+  margin-button: 10px;
+}
+
+
+/*使用精灵图的公用样式*/
+
+//[class^="icon_"],[class*=" icon_"]{
+//  background-repeat: no-repeat;
+//  background-image: url("../images/sprites.png");
+//  background-size: 200px 200px;
+//
+//}
+
+.sn-container{
+   position: relative;
+   max-width: 750px;
+   min-width: 320px;
+   height: 500px;
+   margin: 0 auto;
+   padding-top: 90rem/@baseFontSize;
+   padding-bottom: 500rem/@baseFontSize;
+
+}

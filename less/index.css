@@ -1,0 +1,270 @@
+@charset "UTF-8";
+/*设置宽度*/
+/*基准值*/
+/*原始文件设计尺寸*/
+@media (min-width: 318px) {
+  html {
+    font-size: 44px;
+  }
+}
+@media (min-width: 320px) {
+  html {
+    font-size: 42.66666667px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media (min-width: 384px) {
+  html {
+    font-size: 51.2px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+@media (min-width: 424px) {
+  html {
+    font-size: 56.53333333px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 64px;
+  }
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 72px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 85.33333333px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 96px;
+  }
+}
+@media (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 42.66666667px;
+  }
+}
+/*reset css*/
+*,
+*::before,
+*::after {
+  /*所有的标签，和伪元素都选中*/
+  margin: 0;
+  padding: 0;
+  /*盒子模型,移动端布局是非固定像素*/
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*清除高亮显示*/
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
+body {
+  font-size: 14px;
+  /*sans-serif手机专有的字体*/
+  font-family: 'microsoft yahei', sans-serif;
+}
+a {
+  text-decoration: none;
+  /*display: block;*/
+  color: #333;
+}
+input,
+textarea {
+  border: none;
+  outline: none;
+  /*选中时候*/
+  /*不允许拖动放大缩小*/
+  resize: none;
+  /*清除原有的3d,高光样式*/
+  -webkit-appearance: none;
+}
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+  list-style: none;
+}
+image {
+  border: 0;
+  /*清除下间隙*/
+  display: block;
+}
+/*common css*/
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+.f_l {
+  float: left;
+}
+.f_r {
+  float: right;
+}
+.m-l10 {
+  margin-left: 10px;
+}
+.m-r10 {
+  margin-right: 10px;
+}
+.m-t10 {
+  margin-top: 10px;
+}
+.m-b10 {
+  margin-button: 10px;
+}
+/*使用精灵图的公用样式*/
+.sn-container {
+  position: relative;
+  max-width: 750px;
+  min-width: 320px;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 0.9rem;
+  padding-bottom: 5rem;
+}
+.sn-top-bar {
+  width: 100%;
+  height: 0.9rem;
+  background-color: #fabc09;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.sn-top-bar a {
+  position: absolute;
+  top: 0;
+  width: 0.9rem;
+  height: 0.9rem;
+}
+.sn-top-bar a.icon-category {
+  left: 0;
+  background: url("../images/icon_category.png") no-repeat center / 0.44rem 0.7rem;
+}
+.sn-top-bar a.icon-cart {
+  right: 0;
+  background: url("../images/icon_cart.png") no-repeat center / 0.6rem 0.68rem;
+}
+.sn-top-bar form {
+  width: 100%;
+  padding: 0 0.9rem;
+}
+.sn-top-bar form .icon-search {
+  position: absolute;
+  left: 1rem;
+  top: 0.3rem;
+  width: 0.3rem;
+  height: 0.3rem;
+  background: url("../images/icon_search.png") no-repeat center / 0.27rem 0.28rem;
+}
+.sn-top-bar form input {
+  width: 100%;
+  height: 0.6rem;
+  margin-top: 0.15rem;
+  border-radius: 0.05rem;
+  padding-left: 0.5rem;
+}
+.swiper-container {
+  width: 100%;
+}
+.swiper-container img {
+  display: block;
+  width: 100%;
+}
+.swiper-container.sn-weiper-color {
+  color: #fff;
+}
+.sn-category {
+  width: 100%;
+  padding: 0.1rem 0;
+}
+.sn-category ul {
+  width: 100%;
+}
+.sn-category ul li {
+  width: 20%;
+  float: left;
+}
+.sn-category ul li a {
+  display: block;
+  width: 100%;
+}
+.sn-category ul li a img {
+  display: block;
+  width: 0.82rem;
+  height: 0.82rem;
+  margin: 0 auto;
+}
+.sn-category ul li a p {
+  text-align: center;
+  padding: 0.05rem 0;
+  font-size: 0.2rem;
+}
+.sn-product {
+  height: 500px;
+  background-color: pink;
+}
+.sn-taps {
+  width: 100%;
+  height: 1rem;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  padding: 0.1rem 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.sn-taps ul {
+  width: 100%;
+}
+.sn-taps ul li {
+  width: 20%;
+  float: left;
+}
+.sn-taps ul li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 0.2rem;
+  color: #666;
+}
+.sn-taps ul li a span {
+  font-size: 0.4rem;
+}
+.sn-taps ul li a p {
+  padding-top: 0.05rem;
+}
+.sn-taps ul li a.taps-now {
+  color: #fabc09;
+}
+/*# sourceMappingURL=index.css.map */

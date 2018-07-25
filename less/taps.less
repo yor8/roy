@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.sn-taps{
+  width: 100%;
+  height: 100rem/@baseFontSize;
+  background-color: #fff;
+  border-top:1px solid #ccc ;
+  padding: 10rem/@baseFontSize  0 ;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+
+  ul{
+    width: 100%;
+    li{
+      width: 20%;
+      float: left;
+      a{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 20rem/@baseFontSize;
+        color: #666;
+        span{
+          font-size:40rem/@baseFontSize;
+        }
+        p{
+          padding-top: 5rem/@baseFontSize;
+
+        }
+        &.taps-now{
+          color: @sn-color;
+        }
+      }
+
+    }
+
+  }
+
+}

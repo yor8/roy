@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+//适配
+//需要满足现有的尺寸的屏幕
+//取到所有尺寸,循环写出适配方案
+//使用递归方法
+//@len=length(@adapterDivceWidth);
+
+.adapterDvice(@index) when (@index > 0){
+  //媒体监听
+  @media(min-width:extract(@adapterDeviceList,@index)) {
+    html {
+      font-size: @baseFontSize/@psdWidth * extract(@adapterDeviceList,@index);
+    }
+  }
+
+  //@media screen and (min-width:extract(@adapterDeviceList,@index)){
+  //  html {
+  //        font-size: @baseFontSize/@psdWidth * extract(@adapterDeviceList,@index);
+  //  }
+  //}
+
+ .adapterDvice(@index - 1 );//从大到小
+}
